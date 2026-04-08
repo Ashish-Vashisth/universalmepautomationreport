@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "UNIVERSAL MEP JJM SWSM Daily Report",
@@ -15,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Analytics />
       <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {/* Fixed background image */}

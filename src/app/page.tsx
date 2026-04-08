@@ -252,12 +252,15 @@ export default function Home() {
               <Button
                 onClick={handleDownload}
                 className={cn(
-                  "px-8 py-3 h-auto font-bold text-sm rounded-xl transition-all shadow-lg",
-                  "bg-emerald-600 hover:bg-emerald-700 text-white",
-                  "hover:scale-[1.02] active:scale-[0.98]"
+                  "px-8 py-3 h-auto font-semibold text-sm rounded-xl transition-all shadow-md",
+                  "bg-white text-slate-900 border border-slate-200",
+                  "hover:shadow-lg active:scale-[0.98]",
+                  "dark:bg-white/5 dark:text-white dark:border-white/10"
                 )}
               >
-                <Download className="h-4 w-4 mr-2" />
+                <span className="inline-flex items-center justify-center mr-3 rounded-md bg-blue-50 text-blue-600 p-2 shadow-sm">
+                  <Download className="h-4 w-4" />
+                </span>
                 Download Excel Report
               </Button>
             </motion.div>
